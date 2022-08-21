@@ -14,11 +14,11 @@ const About = () => {
         Quick Intro
       </Text>
       <Text type="p">
-        👨‍🎓 Mechatronics Engineering '26 at the University of Waterloo
+        👨‍🎓 Mechatronics Engineering '26 at the University of Waterloo.
         <br />
         👨‍💻 Software Engineering Intern at Orbiseed Technology Inc.
         <br />
-        ✈️ Seeking Spring '23 Internships in SWE/ML
+        ✈️ Seeking Spring '23 Internships in SWE/ML.
       </Text>
 
       <Text type="p" style={{ paddingTop: "3rem" }}>
