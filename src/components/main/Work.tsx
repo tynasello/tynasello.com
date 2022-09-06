@@ -6,10 +6,10 @@ const Work = () => {
   return (
     <SWork>
       <WorkCard
-        position="Software Engineering Intern"
+        position="Software Engineer Intern"
         employer="Orbiseed Technology Inc"
         location="Toronto, ON"
-        date="Sep 2022 - Dec 2022 "
+        date="Sep 2022 - Present "
       ></WorkCard>
 
       <WorkCard

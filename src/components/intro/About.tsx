@@ -16,7 +16,7 @@ const About = () => {
       <Text type="p">
         👨‍🎓 Mechatronics Engineering '26 at the University of Waterloo.
         <br />
-        👨‍💻 Software Engineering Intern at Orbiseed Technology Inc.
+        👨‍💻 Software Engineer Intern at Orbiseed Technology Inc.
         <br />
         ✈️ Seeking Spring '23 Internships in SWE/ML.
       </Text>
