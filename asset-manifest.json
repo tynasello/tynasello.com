@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.17ac968c.js",
+    "main.js": "/static/js/main.00aa61b0.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/Ty Nasello Resume.pdf": "/static/media/Ty Nasello Resume.365e0d75f7a90591a8d0.pdf",
     "static/media/FEC.png": "/static/media/FEC.fab651db55865ddee389.png",
@@ -10,10 +10,10 @@
     "static/media/me.png": "/static/media/me.77184b1740454ab49b86.png",
     "static/media/CPP.png": "/static/media/CPP.0a72a0148d74bf4808da.png",
     "index.html": "/index.html",
-    "main.17ac968c.js.map": "/static/js/main.17ac968c.js.map",
+    "main.00aa61b0.js.map": "/static/js/main.00aa61b0.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.17ac968c.js"
+    "static/js/main.00aa61b0.js"
   ]
 }
