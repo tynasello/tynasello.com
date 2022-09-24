@@ -1,24 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.d683121d.js",
+    "main.js": "/static/js/main.17ac968c.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/Ty Nasello Resume.pdf": "/static/media/Ty Nasello Resume.365e0d75f7a90591a8d0.pdf",
     "static/media/FEC.png": "/static/media/FEC.fab651db55865ddee389.png",
     "static/media/FDA.png": "/static/media/FDA.111cf42d77713caf629a.png",
     "static/media/CV.png": "/static/media/CV.ec90f05d9a7c6ebcce8f.png",
     "static/media/FSBA.png": "/static/media/FSBA.dbff68c54e000db490fc.png",
-    "static/media/WTA.png": "/static/media/WTA.4e9363bb801b17d00c25.png",
-    "static/media/CS.png": "/static/media/CS.cfef7853314ea344f95c.png",
     "static/media/me.png": "/static/media/me.77184b1740454ab49b86.png",
-    "static/media/FBA.png": "/static/media/FBA.68965dc461a5ebc8b27f.png",
-    "static/media/TDA.png": "/static/media/TDA.1f955eb502c347aa8d36.png",
-    "static/media/RC.png": "/static/media/RC.7658d747697a3acbc755.png",
     "static/media/CPP.png": "/static/media/CPP.0a72a0148d74bf4808da.png",
     "index.html": "/index.html",
-    "main.d683121d.js.map": "/static/js/main.d683121d.js.map",
+    "main.17ac968c.js.map": "/static/js/main.17ac968c.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d683121d.js"
+    "static/js/main.17ac968c.js"
   ]
 }
