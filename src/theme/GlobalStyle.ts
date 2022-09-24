@@ -18,6 +18,9 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         vertical-align: baseline;
         z-index: 1;
+        ::selection {
+            background: rgba(113, 137, 255, .1);
+        }
     }
     /* Miscellaneous resets */
     body {

@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
-import Button from "../common/Button";
-import Link from "../common/Link";
-import Text from "../common/Text";
+import Button from "../../../components/Button";
+import Link from "../../../components/Link";
+import Text from "../../../components/Text";
 
 interface Props {
-  title: string;
-  description: string;
-  tags: string[];
+  title?: string;
+  description?: string;
+  tags?: string[];
   liveLink?: string;
   githubLink?: string;
   image?: any;
@@ -29,7 +29,7 @@ const ProjectCard = ({
       <CardContent>
         <Text type="h2">{title}</Text>
         <TagsContainer>
-          {tags.map((tag) => (
+          {tags?.map((tag) => (
             <Text type="psmall" isLight>
               {tag}
             </Text>
@@ -50,7 +50,7 @@ const ProjectCard = ({
             <Link href={liveLink}>
               <Button type="project">
                 <Text type="psmall" isLight>
-                  Live Demo
+                  Demo
                 </Text>
               </Button>
             </Link>

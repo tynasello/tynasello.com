@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import Text from "../common/Text";
+import Text from "../../../components/Text";
 import SkillTag from "./SkillTag";
 
-const Skill = () => {
+const Skills = () => {
   const skills: string[] = [
     "TypeScript/JavaScript",
     "Git",
@@ -37,37 +37,37 @@ const Skill = () => {
 
   return (
     <>
-      <SkillContainer>
+      <SkillsContainer>
         <Text type="h2">Tools I have experience with ⚙️</Text>
-        <SkillContent>
+        <SkillsContent>
           {skills.map((skill) => (
             <SkillTag name={skill} />
           ))}
-        </SkillContent>
-      </SkillContainer>
-      <SkillContainer>
+        </SkillsContent>
+      </SkillsContainer>
+      <SkillsContainer>
         <Text type="h2">How I spend my free time 🚶‍♂️</Text>
-        <SkillContent>
+        <SkillsContent>
           {hobbies.map((hobby) => (
             <SkillTag name={hobby} />
           ))}
-        </SkillContent>
-      </SkillContainer>
+        </SkillsContent>
+      </SkillsContainer>
     </>
   );
 };
 
-export default Skill;
+export default Skills;
 
-const SkillContainer = styled.div`
+const SkillsContainer = styled.div`
   margin-bottom: 3rem;
 `;
-const SkillContent = styled.div`
+const SkillsContent = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 1.3rem 0;
   > * {
     margin-right: 0.6rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
   }
 `;

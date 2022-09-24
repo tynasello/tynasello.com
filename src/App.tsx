@@ -2,13 +2,11 @@ import { useState } from "react";
 import styled from "styled-components";
 
 import { ThemeProvider } from "styled-components";
-import GlobalStyle from "./components/theme/GlobalStyle";
-import { DarkTheme, Theme } from "./components/theme/Theme";
+import GlobalStyle from "./theme/GlobalStyle";
+import { DarkTheme, Theme } from "./theme/Theme";
 
-import Button from "./components/common/Button";
-import Footer from "./components/Footer";
-import Intro from "./components/intro/Intro";
-import Main from "./components/main/Main";
+import Button from "./components/Button";
+import Landing from "./pages/Landing";
 
 import { BsFillSunFill } from "react-icons/bs";
 import { MdNightlight } from "react-icons/md";
@@ -38,9 +36,7 @@ function App() {
             {theme === "light" ? <MdNightlight /> : <BsFillSunFill />}
           </Button>
 
-          <Intro />
-          <Main />
-          <Footer />
+          <Landing />
         </SApp>
       </>
     </ThemeProvider>

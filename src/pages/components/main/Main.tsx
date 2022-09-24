@@ -1,15 +1,15 @@
 import { useState } from "react";
 import styled from "styled-components";
-import Project from "./Project";
+import Projects from "./Projects";
 import Work from "./Work";
+import Skills from "./Skills";
 
 import { motion } from "framer-motion";
 import { AiFillTool } from "react-icons/ai";
 import { FaFolder } from "react-icons/fa";
 import { MdOutlineWork } from "react-icons/md";
-import Button from "../common/Button";
-import Text from "../common/Text";
-import Skill from "./Skill";
+import Button from "../../../components/Button";
+import Text from "../../../components/Text";
 
 const Main = () => {
   const [section, setSection] = useState("Project");
@@ -23,7 +23,7 @@ const Main = () => {
       <Buttons
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.3, delay: 0.8 }}
+        transition={{ duration: 0.3, delay: 0.75 }}
       >
         <Button
           type="main"
@@ -52,14 +52,14 @@ const Main = () => {
       <MainContent
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.3, delay: 1 }}
+        transition={{ duration: 0.3, delay: 1.1 }}
       >
         {section === "Project" ? (
-          <Project />
+          <Projects />
         ) : section === "Work" ? (
           <Work />
         ) : section === "Skill" ? (
-          <Skill />
+          <Skills />
         ) : (
           <></>
         )}

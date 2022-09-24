@@ -69,7 +69,7 @@ const P = styled(BaseText).attrs(
       isLink && {
         color: theme.colors.one,
         cursor: "pointer",
-        transform: "translateY(-1px)",
+        transform: "translateY(-2px)",
       }}
   }
 `;

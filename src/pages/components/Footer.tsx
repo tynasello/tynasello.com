@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import Link from "./common/Link";
-import Text from "./common/Text";
+import Link from "../../components/Link";
+import Text from "../../components/Text";
 
 function Footer() {
   return (

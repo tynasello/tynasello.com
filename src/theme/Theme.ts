@@ -5,13 +5,13 @@ export const Theme = {
     p: "rgb(48, 48, 64)",
     plight: "rgb(86, 93, 95)",
 
-    one: "rgb(113, 137, 255)",
+    one: "rgb(37, 110, 255)",
     two: "rgb(254, 74, 73)",
-    three: "rgb(37, 110, 255)",
+    three: "rgb(84, 101, 255)",
 
-    onea: "rgba(113, 137, 255, 0.064)",
+    onea: "rgba(37, 110, 255, 0.064)",
     twoa: "rgba(254, 74, 73, 0.064)",
-    threea: "rgba(37, 110, 255, 0.064)",
+    threea: "rgba(84, 101, 255, 0.064)",
   },
 };
 

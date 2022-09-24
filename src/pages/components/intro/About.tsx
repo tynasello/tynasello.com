@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import Link from "../common/Link";
-import Text from "../common/Text";
+import Link from "../../../components/Link";
+import Text from "../../../components/Text";
 
 const About = () => {
   return (
     <SAbout
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.3, delay: 0.7 }}
+      transition={{ duration: 0.2, delay: 0.6 }}
     >
       <Text type="p" style={{ paddingTop: "3rem", paddingBottom: "1rem" }}>
         Quick Intro
@@ -34,10 +34,10 @@ const About = () => {
           <Link href="https://www.linkedin.com/in/ty-nasello/">Linkedin</Link>
         </Text>
         {". "}I also encourage you to view my{" "}
-        <Text type="p" isLink isLight>
+        <Text type="p" isLink isBold>
           <Link href="https://github.com/tynasello">GitHub</Link>
-        </Text>
-        {". "}
+        </Text>{" "}
+        to see what I am currently working on.
       </Text>
     </SAbout>
   );

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
-import Text from "../common/Text";
+import Text from "../../../components/Text";
 
 interface Props {
   position: string;

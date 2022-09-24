@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
-import Link from "../common/Link";
-import Text from "../common/Text";
+import Link from "../../../components/Link";
+import Text from "../../../components/Text";
 
 import { motion } from "framer-motion";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { RiGithubLine } from "react-icons/ri";
 import { TiSocialLinkedin } from "react-icons/ti";
-import me from "../../assets/img/me.png";
-import resume from "../../assets/Ty Nasello Resume.pdf";
-import Button from "../common/Button";
+import me from "../../../assets/img/me.png";
+import resume from "../../../assets/Ty Nasello Resume.pdf";
+import Button from "../../../components/Button";
 
 const Header = () => {
   return (
