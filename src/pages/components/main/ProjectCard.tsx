@@ -50,7 +50,7 @@ const ProjectCard = ({
             <Link href={liveLink}>
               <Button type="project">
                 <Text type="psmall" isLight>
-                  Demo
+                  Live Demo
                 </Text>
               </Button>
             </Link>

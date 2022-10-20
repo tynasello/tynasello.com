@@ -5,26 +5,33 @@ import SkillTag from "./SkillTag";
 const Skills = () => {
   const skills: string[] = [
     "TypeScript/JavaScript",
-    "Git",
     "Python",
-    " Node.js",
-    "C++",
     "Java",
-    "React.js",
-    "NestJS",
+    "C++",
     "SQL",
+    "C",
+    "C#",
+    "Swift",
+  ];
+
+  const tools: string[] = [
+    "Git",
+    "Node.js",
+    "React.js",
     "PyTorch",
+    "NestJS",
     "Express.js",
-    "GraphQL",
-    "Prisma",
     "Docker",
+    "GraphQL",
     "MongoDB",
     "Jest",
+    "Prisma",
     "Redux",
     "Heroku",
     "Netlify",
     "HTML/CSS",
   ];
+
   const hobbies: string[] = [
     "Running",
     "Exercising",
@@ -38,7 +45,7 @@ const Skills = () => {
   return (
     <>
       <SkillsContainer>
-        <Text type="h2">Tools I have experience with ⚙️</Text>
+        <Text type="h2">Programming skills 👨‍💻</Text>
         <SkillsContent>
           {skills.map((skill) => (
             <SkillTag name={skill} />
@@ -46,7 +53,15 @@ const Skills = () => {
         </SkillsContent>
       </SkillsContainer>
       <SkillsContainer>
-        <Text type="h2">How I spend my free time 🚶‍♂️</Text>
+        <Text type="h2">Other tools I am familiar with ⚙️</Text>
+        <SkillsContent>
+          {tools.map((skill) => (
+            <SkillTag name={skill} />
+          ))}
+        </SkillsContent>
+      </SkillsContainer>
+      <SkillsContainer>
+        <Text type="h2">Some of my interests 🚶‍♂️</Text>
         <SkillsContent>
           {hobbies.map((hobby) => (
             <SkillTag name={hobby} />
@@ -60,7 +75,7 @@ const Skills = () => {
 export default Skills;
 
 const SkillsContainer = styled.div`
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 `;
 const SkillsContent = styled.div`
   display: flex;

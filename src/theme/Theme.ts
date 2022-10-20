@@ -17,10 +17,10 @@ export const Theme = {
 
 export const DarkTheme = {
   colors: {
-    lightbg: "rgb(27, 38, 49)",
+    lightbg: "rgb(30, 39, 51)",
 
-    p: "rgb(247, 249, 249)",
-    plight: "rgb(189, 195, 199)",
+    p: "rgb(208, 211, 212)",
+    plight: "rgb(179, 182, 183)",
 
     one: "rgb(147, 129, 255)",
     two: "rgb(226, 70, 95)",

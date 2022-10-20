@@ -9,7 +9,7 @@ import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { RiGithubLine } from "react-icons/ri";
 import { TiSocialLinkedin } from "react-icons/ti";
 import me from "../../../assets/img/me.png";
-import resume from "../../../assets/Ty Nasello Resume.pdf";
+import resume from "../../../assets/ty_nasello_resume.docx.pdf";
 import Button from "../../../components/Button";
 
 const Header = () => {

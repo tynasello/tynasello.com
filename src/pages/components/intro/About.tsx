@@ -16,7 +16,7 @@ const About = () => {
       <Text type="p">
         👨‍🎓 Mechatronics Engineering '26 at the University of Waterloo.
         <br />
-        👨‍💻 Software Engineer Intern at Orbiseed Technology Inc.
+        👨‍💻 Previous Software Engineer Intern at Orbiseed Technology Inc.
         <br />
         ✈️ Seeking Spring '23 Internships in SWE/ML.
       </Text>
@@ -34,7 +34,7 @@ const About = () => {
           <Link href="https://www.linkedin.com/in/ty-nasello/">Linkedin</Link>
         </Text>
         {". "}I also encourage you to view my{" "}
-        <Text type="p" isLink isBold>
+        <Text type="p" isLink isLight>
           <Link href="https://github.com/tynasello">GitHub</Link>
         </Text>{" "}
         to see what I am currently working on.

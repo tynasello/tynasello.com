@@ -71,9 +71,10 @@ const SProjectButton = styled(BaseButton)`
 
 const SSkillButton = styled(BaseButton)`
   cursor: default;
-  padding: 0.5rem 0.7rem;
-
-  background: ${({ theme }) => theme.colors.threea};
+  span {
+    padding: 0.34rem 0.6rem;
+  }
+  /* background: ${({ theme }) => theme.colors.threea}; */
 `;
 
 const SMainButton = styled(BaseButton).attrs(
