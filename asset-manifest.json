@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.00aa61b0.js",
+    "main.js": "/static/js/main.bf907725.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
-    "static/media/Ty Nasello Resume.pdf": "/static/media/Ty Nasello Resume.365e0d75f7a90591a8d0.pdf",
     "static/media/FEC.png": "/static/media/FEC.fab651db55865ddee389.png",
-    "static/media/FDA.png": "/static/media/FDA.111cf42d77713caf629a.png",
+    "static/media/FDA.png": "/static/media/FDA.c9dd4350be21e2edb552.png",
     "static/media/CV.png": "/static/media/CV.ec90f05d9a7c6ebcce8f.png",
     "static/media/FSBA.png": "/static/media/FSBA.dbff68c54e000db490fc.png",
     "static/media/me.png": "/static/media/me.77184b1740454ab49b86.png",
+    "static/media/ty_nasello_resume.docx.pdf": "/static/media/ty_nasello_resume.docx.32ee506d6dee36b23aba.pdf",
     "static/media/CPP.png": "/static/media/CPP.0a72a0148d74bf4808da.png",
     "index.html": "/index.html",
-    "main.00aa61b0.js.map": "/static/js/main.00aa61b0.js.map",
+    "main.bf907725.js.map": "/static/js/main.bf907725.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.00aa61b0.js"
+    "static/js/main.bf907725.js"
   ]
 }
