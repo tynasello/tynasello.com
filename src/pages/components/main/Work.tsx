@@ -10,6 +10,7 @@ const Work = () => {
         position="Software Engineer Intern"
         employer="Orbiseed Technology Inc."
         location="Toronto, ON"
+        rating="Outstanding"
         date="Sep 2022 - Oct 2022 (ceased operations)"
       >
         <Text type="psmall">

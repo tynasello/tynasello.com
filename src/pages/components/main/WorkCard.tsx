@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
+import LineBreak from "../../../components/LineBreak";
 import Text from "../../../components/Text";
 
 interface Props {
@@ -26,18 +27,19 @@ const WorkCard = ({
           {position} <span style={{ fontWeight: "100" }}>@ {employer}</span>
         </Text>
 
-        <Text type="psmall" isLight style={{ paddingBottom: "1rem" }}>
+        <Text type="psmall" isLight>
           {location}{" "}
           <span style={{ paddingLeft: "1rem", fontSize: "11px" }}>{date}</span>
         </Text>
         {rating && (
-          <Text type="psmall" isLight style={{ marginBottom: ".5rem" }}>
+          <Text type="psmall" isLight>
             Employer Evaluation:{" "}
             <Text type="psmall" isBold>
               {rating}
             </Text>
           </Text>
         )}
+        <LineBreak />
         {children && children}
       </SWorkCard>
     </>
