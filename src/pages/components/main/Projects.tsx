@@ -49,7 +49,6 @@ const Projects = () => {
           "JWT",
         ]}
         githubLink="https://github.com/Tynasello/old-projects/tree/main/blog-application"
-        liveLink="https://tynasello.github.io/blog-frontend/#/posts"
         image={FSBA}
       ></ProjectCard>
       <ProjectCard
