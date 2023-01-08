@@ -12,24 +12,22 @@ const Skills = () => {
     "C",
     "C#",
     "Swift",
+    "HTML/CSS",
   ];
 
   const tools: string[] = [
     "Git",
     "Node.js",
     "React.js",
-    "PyTorch",
     "NestJS",
     "Express.js",
     "Docker",
     "GraphQL",
+    "PostgreSQL",
     "MongoDB",
     "Jest",
+    "PyTorch",
     "Prisma",
-    "Redux",
-    "Heroku",
-    "Netlify",
-    "HTML/CSS",
   ];
 
   const hobbies: string[] = [
@@ -37,8 +35,6 @@ const Skills = () => {
     "Exercising",
     "SWE",
     "Basketball",
-    "Machine Learning",
-    "Fullstack",
     "Nature",
   ];
 

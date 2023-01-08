@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
 
+import CAT from "../../../assets/img/CAT.png";
 import CPP from "../../../assets/img/CPP.png";
 import CV from "../../../assets/img/CV.png";
 import FDA from "../../../assets/img/FDA.png";
@@ -11,6 +12,13 @@ import OldProjects from "./OldProjects";
 const Projects = () => {
   return (
     <SProject>
+      <ProjectCard
+        title="Clean Architecture Template"
+        description="A starter project for a monolithic application that follows the Clean Architecture design philosophy."
+        tags={["TypeScript", "NestJS", "PostgreSQL", "Docker"]}
+        githubLink="https://github.com/Tynasello/clean-nest-monolith"
+        image={CAT}
+      ></ProjectCard>
       <ProjectCard
         title="Facial Expression Classifier"
         description="Using deep learning to classify images of people based on their emotions."
@@ -66,7 +74,6 @@ const Projects = () => {
         githubLink="https://github.com/Tynasello/competitive-programming"
         image={CPP}
       ></ProjectCard>
-
       <OldProjects />
     </SProject>
   );

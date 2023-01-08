@@ -18,7 +18,7 @@ const About = () => {
         <br />
         👨‍💻 Previous Software Engineer Intern at Orbiseed Technology Inc.
         <br />
-        ✈️ Seeking Spring '23 Internships in SWE/ML.
+        ✈️ Seeking Spring '23 Internships in SWE.
       </Text>
 
       <Text type="p" style={{ paddingTop: "3rem" }}>
