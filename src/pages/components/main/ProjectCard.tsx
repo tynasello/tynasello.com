@@ -28,6 +28,7 @@ const ProjectCard = ({
       {image && <ProjectImg src={image} alt="Project Image" />}
       <CardContent>
         <Text type="h2">{title}</Text>
+        <Text type="psmall">{description}</Text>
         <TagsContainer>
           {tags?.map((tag) => (
             <Text type="psmall" isLight>
@@ -35,7 +36,6 @@ const ProjectCard = ({
             </Text>
           ))}
         </TagsContainer>
-        <Text type="psmall">{description}</Text>
         <Links>
           {githubLink && (
             <Link href={githubLink}>

@@ -6,7 +6,6 @@ import CPP from "../../../assets/img/CPP.png";
 import CV from "../../../assets/img/CV.png";
 import FDA from "../../../assets/img/FDA.png";
 import FEC from "../../../assets/img/FEC.png";
-import FSBA from "../../../assets/img/FSBA.png";
 import OldProjects from "./OldProjects";
 
 const Projects = () => {
@@ -14,8 +13,8 @@ const Projects = () => {
     <SProject>
       <ProjectCard
         title="Clean Architecture Template"
-        description="A starter project for a monolithic application that follows the Clean Architecture design philosophy."
-        tags={["TypeScript", "NestJS", "PostgreSQL", "Docker"]}
+        description={`A project template for a monolithic application that follows the Clean Architecture design philosophy.`}
+        tags={["TypeScript", "NestJS", "Docker", "PostgreSQL"]}
         githubLink="https://github.com/Tynasello/clean-nest-monolith"
         image={CAT}
       ></ProjectCard>
@@ -30,13 +29,12 @@ const Projects = () => {
         title="Food Delivery App"
         description="A food delivery app clone, allowing users to login, browse the store, and checkout desired items in their cart."
         tags={[
+          "React.js",
           "TypeScript",
           "NestJS",
           "PostgreSQL",
-          "React.js",
           "GraphQL",
           "Prisma",
-          "JWT",
           "Docker",
           "Jest",
           "Heroku",
@@ -44,20 +42,6 @@ const Projects = () => {
         githubLink="https://github.com/Tynasello/food-delivery-app"
         liveLink="https://tynasello.github.io/food-delivery-app/"
         image={FDA}
-      ></ProjectCard>
-      <ProjectCard
-        title="Fullstack Blog Application"
-        description="A blog application where users can view and interact with posts. A login system with protected endpoints exists for the admin to manage posts."
-        tags={[
-          "TypeScript",
-          "Node.js",
-          "Express.js",
-          "React.js",
-          "MongoDB",
-          "JWT",
-        ]}
-        githubLink="https://github.com/Tynasello/old-projects/tree/main/blog-application"
-        image={FSBA}
       ></ProjectCard>
       <ProjectCard
         title="CV Builder"

@@ -9,7 +9,7 @@ const Work = () => {
       <WorkCard
         position="Software Engineer Intern"
         employer="Orbiseed Technology Inc."
-        location="Toronto, ON"
+        location="Toronto, ON (Remote)"
         rating="Outstanding"
         date="Sep 2022 - Oct 2022 (ceased operations)"
       >
@@ -24,7 +24,7 @@ const Work = () => {
           aspects of domain-driven design using Express.js, TypeScript, and
           MongoDB. I also made multiple client-facing front-end changes using
           React.js and Redux and wrote unit and integration tests for new and
-          existing code (Jest/Chai). Throughout my work I leveraged many
+          existing code (Jest/Chai). Throughout my work, I leveraged many
           libraries such as InversifyJS (an IoC container) and mongoose, as well
           as tools like Docker and AWS (Lambda, SQS, and S3). I had the
           opportunity to learn in-depth how a CI/CD pipeline is constructed, and
@@ -36,29 +36,29 @@ const Work = () => {
       <WorkCard
         position="Software Development Intern"
         employer="MedMe Health"
-        location="Toronto, ON"
+        location="Toronto, ON (Remote)"
         rating="Outstanding"
         date="Jan 2022 - Apr 2022 "
       >
         <Text type="psmall">
           {" "}
-          During my time at MedMe Health, I was able to grow my skills in full
-          stack web development and gain experience working in an agile
+          During my time at MedMe Health, I was able to grow my skills in
+          full-stack web development and gain experience working in an agile
           workflow. The web applications I worked on enable pharmacists to
           provide clinical services at scale, serving over 2,297 pharmacies
           across 10 provinces and territories in Canada. In 2021, they aided in
           administering 544,302 flu shots, 2,219,143 COVID vaccine doses, and
           155,355 COVID tests.
           <LineBreak />
-          Throughout my placement I implemented a variety of shipped front-end
-          features including new patient intakes and pharmacist modules. While
-          developing, I had the opportunity to use a variety of technologies and
-          tools including React.js, TypeScript, PostgreSQL, Apollo GraphQL,
-          Redux, and Jest. I also completed bug fixes in a back-end monolithic
-          architecture using Java and the Spring framework. I was an initial
-          driver in the unit testing of new React components. Aside from working
-          on my own tickets I frequently code reviewed front-end pull requests
-          from other developers.
+          I implemented a variety of shipped front-end features including new
+          patient intakes and pharmacist modules. While developing, I had the
+          opportunity to use a variety of technologies and tools including
+          React.js, TypeScript, PostgreSQL, Apollo GraphQL, Redux, and Jest. I
+          also completed bug fixes in a back-end monolithic architecture using
+          Java and the Spring framework. I was an initial driver in the unit
+          testing of new React components. Aside from working on my own tickets
+          I frequently code-reviewed front-end pull requests from other
+          developers.
           <LineBreak />I strive to look for ways to improve existing systems.
           While at MedMe, I made a tool to expedite the process of mapping PDFs
           holding patient information stored in databases. The tool that I
@@ -74,6 +74,6 @@ export default Work;
 
 const SWork = styled.div`
   > * {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 `;

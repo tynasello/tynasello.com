@@ -14,18 +14,17 @@ const About = () => {
         Quick Intro
       </Text>
       <Text type="p">
-        👨‍🎓 Mechatronics Engineering '26 at the University of Waterloo.
+        👨‍🎓 Mechatronics Engineering at the University of Waterloo
         <br />
-        👨‍💻 Previous Software Engineer Intern at Orbiseed Technology Inc.
+        👨‍💻 Previous Software Engineer Intern at Orbiseed Technology Inc
         <br />
-        ✈️ Seeking Spring '23 Internships in SWE.
+        ✈️ Currently seeking SWE Internships
       </Text>
 
       <Text type="p" style={{ paddingTop: "3rem" }}>
         I am a <Text isBold>driven</Text> and <Text isBold>passionate</Text>{" "}
         learner. I enjoy tackling challenging projects that expose me to new
-        areas and ways of thinking. Here you can learn more about me and the
-        work I'm doing. Feel free to contact me via{" "}
+        areas and ways of thinking. Feel free to contact me via{" "}
         <Text type="p" isLink isLight>
           <Link href="mailto:tnasello@uwaterloo.ca">email</Link>
         </Text>{" "}
