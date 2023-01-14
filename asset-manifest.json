@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.b6bde7aa.js",
+    "main.js": "/static/js/main.d67bb9ff.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/FEC.png": "/static/media/FEC.fab651db55865ddee389.png",
     "static/media/FDA.png": "/static/media/FDA.c9dd4350be21e2edb552.png",
     "static/media/CV.png": "/static/media/CV.ec90f05d9a7c6ebcce8f.png",
-    "static/media/FSBA.png": "/static/media/FSBA.dbff68c54e000db490fc.png",
+    "static/media/ty_nasello_resume.pdf": "/static/media/ty_nasello_resume.c5a3f0fef87bcdf49105.pdf",
     "static/media/me.png": "/static/media/me.77184b1740454ab49b86.png",
-    "static/media/ty_nasello_resume.docx.pdf": "/static/media/ty_nasello_resume.docx.e073fc685785ec3c9171.pdf",
     "static/media/CAT.png": "/static/media/CAT.5001ab86b410029a89c3.png",
     "static/media/CPP.png": "/static/media/CPP.0a72a0148d74bf4808da.png",
     "index.html": "/index.html",
-    "main.b6bde7aa.js.map": "/static/js/main.b6bde7aa.js.map",
+    "main.d67bb9ff.js.map": "/static/js/main.d67bb9ff.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b6bde7aa.js"
+    "static/js/main.d67bb9ff.js"
   ]
 }
