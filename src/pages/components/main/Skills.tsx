@@ -53,7 +53,7 @@ const Skills = () => {
         <br />
         <Text type="psmall">
           I like to think I am language agnostic, but listed here are some of
-          the languages I am most familiar with.
+          the languages I have experience with.
         </Text>
         <SkillsContent>
           {skills.map((skill) => (
