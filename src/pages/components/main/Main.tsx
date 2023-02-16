@@ -5,7 +5,7 @@ import Work from "./Work";
 import Skills from "./Skills";
 
 import { motion } from "framer-motion";
-// import { AiFillTool } from "react-icons/ai";
+import { AiFillTool } from "react-icons/ai";
 import { FaFolder } from "react-icons/fa";
 // import { MdOutlineWork } from "react-icons/md";
 import Button from "../../../components/Button";
@@ -42,12 +42,12 @@ const Main = () => {
             Work Experience
           </Text>
         </Button> */}
-        {/* <Button type="main" onClick={onClick} active={section} section="Skill">
+        <Button type="main" onClick={onClick} active={section} section="Skill">
           <AiFillTool />
           <Text type="psmall" isBold>
             Skills
           </Text>
-        </Button> */}
+        </Button>
       </Buttons>
       <MainContent
         initial={{ y: 25, opacity: 0 }}

@@ -7,6 +7,10 @@ import Text from "../../../components/Text";
 const OldProjects = () => {
   const oldProjects: Record<string, string>[] = [
     {
+      name: "CV Builder",
+      link: "https://github.com/Tynasello/old-projects/tree/main/cv-builder",
+    },
+    {
       name: "Arduino Robot Car",
       link: "https://github.com/Tynasello/old-projects/tree/main/arduino-robot",
     },
