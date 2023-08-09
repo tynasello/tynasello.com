@@ -10,19 +10,13 @@ const About = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.2, delay: 0.6 }}
     >
-      <Text type="p" style={{ paddingTop: "3rem", paddingBottom: "0.7rem" }}>
-        Quick Intro
-      </Text>
-      <Text type="p">
-        👨‍🎓 Mechatronics Engineering at the University of Waterloo
-        {/*<br />
-        👨‍💻 Previous Software Engineer Intern at Orbiseed Technology Inc.
-        */}
+      <Text type="p" style={{ padding: "2rem 0" }}>
+        👨‍🎓 Computer Science at the University of Waterloo
         <br />
         ✈️ Currently seeking SWE Internships
       </Text>
 
-      <Text type="p" style={{ paddingTop: "2rem" }}>
+      <Text type="p">
         I am a <Text isBold>driven</Text> and <Text isBold>passionate</Text>{" "}
         learner. I enjoy tackling challenging projects that expose me to new
         areas and ways of thinking. My goals are always centered around a focus

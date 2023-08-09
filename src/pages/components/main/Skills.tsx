@@ -4,45 +4,42 @@ import SkillTag from "./SkillTag";
 
 const Skills = () => {
   const skills: string[] = [
-    "TypeScript/JavaScript",
+    "TypeScript",
     "Python",
+    "Rust",
+    "Go",
+    "SQL",
     "C++",
     "Java",
-    "SQL",
-    "HTML/CSS",
     "C",
-    "C#",
-    "Swift",
   ];
 
-  const tools: string[] = [
-    "Node.js",
-    "React.js",
-    "NestJS",
+  const technologies: string[] = [
     "Docker",
+    "Kafka",
+    "AWS",
+    "Kuberenetes",
     "GraphQL",
-    "PyTorch",
-    "PostgreSQL",
-    "MongoDB",
     "Git",
-    "Express.js",
-    "Jest",
-    "Redux",
-    "Prisma",
-    "AWS (some services)",
+    "PostgreSQL",
+    "NoSQL",
+    "Node.js",
+    "NestJS",
+    "React.js",
   ];
 
-  const currentInterests = [
-    "• Microservice architectures.",
-    "• Event-driven architectures.",
-    "• Learning Rust, Go, and Kafka.",
-  ];
+  // const currentInterests = [
+  //   "• Microservice architectures.",
+  //   "• Event-driven architectures.",
+  //   "• Learning Rust, Go, and Kafka.",
+  // ];
 
   const hobbies: string[] = [
     "Exercising",
     "Basketball",
     "Competitive programming",
     "Nature",
+    "Golf",
     "Chess",
   ];
 
@@ -51,7 +48,7 @@ const Skills = () => {
       <SkillsContainer>
         <Text type="h2">Programming skills 👨‍💻</Text>
         <br />
-        <Text type="psmall">
+        <Text type="psmall" style={{ paddingTop: ".8rem" }}>
           I like to think I am language agnostic, but listed here are some of
           the languages I have experience with.
         </Text>
@@ -62,21 +59,21 @@ const Skills = () => {
         </SkillsContent>
       </SkillsContainer>
       <SkillsContainer>
-        <Text type="h2">Other tools I am familiar with</Text>
+        <Text type="h2">Other technology I am familiar with</Text>
         <SkillsContent>
-          {tools.map((skill) => (
+          {technologies.map((skill) => (
             <SkillTag name={skill} />
           ))}
         </SkillsContent>
       </SkillsContainer>
-      <SkillsContainer>
+      {/* <SkillsContainer>
         <Text type="h2">What I am currently interested in</Text>
         <ListContent>
           {currentInterests.map((interest) => (
             <Text type="psmall">{interest}</Text>
           ))}
         </ListContent>
-      </SkillsContainer>
+      </SkillsContainer> */}
       <SkillsContainer>
         <Text type="h2">Some of my hobbies🚶‍♂️</Text>
         <SkillsContent>
@@ -103,9 +100,9 @@ const SkillsContent = styled.div`
     margin-bottom: 0.6rem;
   }
 `;
-const ListContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0.4rem 0.6rem;
-`;
+// const ListContent = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: wrap;
+//   margin: 0.4rem 0.6rem;
+// `;

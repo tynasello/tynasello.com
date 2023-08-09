@@ -32,7 +32,6 @@ const GlobalStyle = createGlobalStyle`
     a{
         color: white;
         all:unset;
-        
     }
     
     button,

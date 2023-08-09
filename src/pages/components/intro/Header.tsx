@@ -13,6 +13,30 @@ import resume from "../../../assets/ty_nasello_resume.pdf";
 import Button from "../../../components/Button";
 
 const Header = () => {
+  const contactButtons: {
+    href: string;
+    icon: JSX.Element;
+    text?: string;
+  }[] = [
+    {
+      href: "https://www.linkedin.com/in/ty-nasello/",
+      icon: <TiSocialLinkedin />,
+    },
+    {
+      href: "https://github.com/tynasello",
+      icon: <RiGithubLine />,
+    },
+    {
+      href: "mailto:tnasello@uwaterloo.ca",
+      icon: <MdOutlineMarkEmailUnread />,
+    },
+    {
+      href: resume,
+      icon: <IoDocumentTextOutline />,
+      text: "Resume",
+    },
+  ];
+
   return (
     <SHeader>
       <Content
@@ -30,53 +54,24 @@ const Header = () => {
       </Content>
 
       <Contacts>
-        <Link href="https://www.linkedin.com/in/ty-nasello/">
-          <motion.div
-            initial={{ y: 25, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.3, delay: 0.1 }}
-          >
-            <Button type="contact">
-              <TiSocialLinkedin />
-            </Button>
-          </motion.div>
-        </Link>
-        <Link href="https://github.com/tynasello">
-          <motion.div
-            initial={{ y: 25, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.3, delay: 0.15 }}
-          >
-            <Button type="contact">
-              <RiGithubLine />
-            </Button>
-          </motion.div>
-        </Link>
-        <Link href="mailto:tnasello@uwaterloo.ca">
-          <motion.div
-            initial={{ y: 25, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.3, delay: 0.2 }}
-          >
-            <Button type="contact">
-              <MdOutlineMarkEmailUnread />
-            </Button>
-          </motion.div>
-        </Link>
-        <Link href={resume}>
-          <motion.div
-            initial={{ y: 25, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.3, delay: 0.25 }}
-          >
-            <Button type="contact">
-              <IoDocumentTextOutline />
-              <Text type="psmall" isBold isLight>
-                Resume
-              </Text>
-            </Button>
-          </motion.div>
-        </Link>
+        {contactButtons.map((button) => (
+          <Link href={button.href}>
+            <motion.div
+              initial={{ y: 25, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+            >
+              <Button type="contact">
+                {button.icon}
+                {button.text && (
+                  <Text type="psmall" isBold isLight>
+                    {button.text}
+                  </Text>
+                )}
+              </Button>
+            </motion.div>
+          </Link>
+        ))}
       </Contacts>
     </SHeader>
   );
