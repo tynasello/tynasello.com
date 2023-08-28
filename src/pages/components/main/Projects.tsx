@@ -74,6 +74,7 @@ const Projects = () => {
     <SProject>
       {projects.map((project) => (
         <ProjectCard
+          key={project.title}
           title={project.title}
           description={project.description}
           tags={project.tags}

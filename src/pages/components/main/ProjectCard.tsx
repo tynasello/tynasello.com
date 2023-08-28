@@ -24,14 +24,14 @@ const ProjectCard = ({
   children,
 }: Props) => {
   return (
-    <SProjectCard>
+    <SProjectCard key={title}>
       {image && <ProjectImg src={image} alt="Project Image" />}
       <CardContent>
         <Text type="h2">{title}</Text>
         <Text type="psmall">{description}</Text>
         <TagsContainer>
           {tags?.map((tag) => (
-            <Text type="psmall" isLight>
+            <Text key={tag} type="psmall" isLight>
               {tag}
             </Text>
           ))}

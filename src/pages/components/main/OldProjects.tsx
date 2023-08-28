@@ -42,7 +42,7 @@ const OldProjects = () => {
       </Text>
       <OldProjectsContentContainer>
         {oldProjects.map((project) => (
-          <Link href={project.link}>
+          <Link href={project.link} key={project.name}>
             <Button type="project">
               <Text type="psmall" isLight>
                 {project.name}

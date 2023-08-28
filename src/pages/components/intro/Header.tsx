@@ -9,7 +9,7 @@ import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { RiGithubLine } from "react-icons/ri";
 import { TiSocialLinkedin } from "react-icons/ti";
 import me from "../../../assets/img/me.png";
-import resume from "../../../assets/ty_nasello_resume.pdf";
+import resume from "../../../assets/ty-nasello-resume.pdf";
 import Button from "../../../components/Button";
 
 const Header = () => {
@@ -55,7 +55,7 @@ const Header = () => {
 
       <Contacts>
         {contactButtons.map((button) => (
-          <Link href={button.href}>
+          <Link href={button.href} key={button.href}>
             <motion.div
               initial={{ y: 25, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
