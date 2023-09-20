@@ -13,7 +13,7 @@ function Footer() {
       <FooterContent>
         <Link href="https://github.com/Tynasello/personal-portfolio">
           <Text type="psmall" isLight>
-            Ty Nasello 2022 ✍️ ⓒ
+            Ty Nasello 2023 ✍️ ⓒ
           </Text>
         </Link>
       </FooterContent>
