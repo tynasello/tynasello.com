@@ -6,26 +6,30 @@ const Skills = () => {
   const skills: string[] = [
     "TypeScript",
     "Python",
-    "Rust",
-    "Go",
-    "SQL",
     "C++",
+    "Rust",
+    "Golang",
     "Java",
-    "C",
+    "SQL",
+    "HTML/CSS",
   ];
 
   const technologies: string[] = [
     "Docker",
-    "Kafka",
     "AWS",
     "Kuberenetes",
-    "GraphQL",
-    "Git",
     "PostgreSQL",
     "NoSQL",
+    "React",
     "Node.js",
+    "Spring Boot",
+    "Kafka",
+    "REST",
+    "GraphQL",
+    "Linux",
+    "Bash",
+    "Git",
     "NestJS",
-    "React.js",
   ];
 
   // const currentInterests = [
