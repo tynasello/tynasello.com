@@ -4,9 +4,11 @@ import SkillTag from "./SkillTag";
 
 const Skills = () => {
   const skills: string[] = [
-    "TypeScript",
-    "Python",
+    "C",
     "C++",
+    "JavaScript/TypeScript",
+    "Python",
+    "Assembly",
     "Rust",
     "Golang",
     "Java",
@@ -17,19 +19,18 @@ const Skills = () => {
   const technologies: string[] = [
     "Docker",
     "AWS",
-    "Kuberenetes",
     "PostgreSQL",
     "NoSQL",
-    "React",
+    "GDB",
+    "Make",
     "Node.js",
-    "Spring Boot",
+    "Kuberenetes",
+    "React",
+    "Git",
     "Kafka",
-    "REST",
     "GraphQL",
     "Linux",
     "Bash",
-    "Git",
-    "NestJS",
   ];
 
   // const currentInterests = [
@@ -40,11 +41,11 @@ const Skills = () => {
 
   const hobbies: string[] = [
     "Exercising",
+    "Running",
     "Basketball",
-    "Competitive programming",
+    "Jiu-jitsu",
     "Nature",
     "Golf",
-    "Chess",
   ];
 
   return (

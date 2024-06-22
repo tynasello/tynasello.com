@@ -1,4 +1,4 @@
-My current personal portfolio website found at [tynasello.com](https://tynasello.com).
+My personal website found at [tynasello.com](https://tynasello.com).
 
 Built with:
 
