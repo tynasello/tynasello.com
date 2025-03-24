@@ -1,16 +1,15 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
-import Button from "../../../components/Button";
-import Link from "../../../components/Link";
-import Text from "../../../components/Text";
+import Button from "../../components/Button";
+import Link from "../../components/Link";
+import Text from "../../components/Text";
 
 interface Props {
-  title?: string;
-  description?: string;
+  title: string;
+  description: string;
   tags?: string[];
-  liveLink?: string;
-  githubLink?: string;
-  image?: any;
+  links?: { text: string; href: string }[];
+  image: any;
   children?: ReactNode;
 }
 
@@ -18,8 +17,7 @@ const ProjectCard = ({
   title,
   description,
   tags,
-  liveLink,
-  githubLink,
+  links,
   image,
   children,
 }: Props) => {
@@ -37,24 +35,15 @@ const ProjectCard = ({
           ))}
         </TagsContainer>
         <Links>
-          {githubLink && (
-            <Link href={githubLink}>
+          {links?.map((link) => (
+            <Link key={link.text} href={link.href}>
               <Button type="project">
                 <Text type="psmall" isLight>
-                  Learn More
+                  {link.text}
                 </Text>
               </Button>
             </Link>
-          )}
-          {liveLink && (
-            <Link href={liveLink}>
-              <Button type="project">
-                <Text type="psmall" isLight>
-                  Live Demo
-                </Text>
-              </Button>
-            </Link>
-          )}{" "}
+          ))}
         </Links>
         {children ? children : <></>}
       </CardContent>
@@ -67,16 +56,18 @@ export default ProjectCard;
 const SProjectCard = styled.div`
   display: flex;
   flex-direction: row;
+  row-gap: 1rem;
+  column-gap: 2rem;
   /* min-height: 160px; */
   @media only screen and (max-width: 560px) {
     flex-direction: column;
   }
 `;
+
 const ProjectImg = styled.img`
   width: 100px;
   height: 100px;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
+
   border-radius: 10px;
   transition: all ease-in-out 0.4s;
   transform-origin: 100% 30%;
@@ -90,22 +81,21 @@ const ProjectImg = styled.img`
     z-index: 2;
   }
 `;
+
 const CardContent = styled.div`
   display: flex;
   flex-direction: column;
-  > * {
-    margin-bottom: 0.3rem;
-  }
+  gap: 0.4rem;
 `;
+
 const TagsContainer = styled.div`
-  > * {
-    margin-right: 0.8rem;
-  }
+  display: flex;
+  column-gap: 0.8rem;
+  flex-wrap: wrap;
 `;
+
 const Links = styled.div`
   display: flex;
-  margin-top: 0.5rem;
-  > * {
-    margin-right: 0.8rem;
-  }
+  gap: 0.8rem;
+  margin-top: 0.4rem;
 `;

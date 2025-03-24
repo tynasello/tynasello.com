@@ -1,19 +1,20 @@
 import styled from "styled-components";
 
-import Link from "../../../components/Link";
-import Text from "../../../components/Text";
+import me from "../../assets/img/me.png";
+import resume from "../../assets/ty-nasello-resume.pdf";
+
+import Link from "../../components/Link";
+import Text from "../../components/Text";
+import Button from "../../components/Button";
 
 import { motion } from "framer-motion";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { RiGithubLine } from "react-icons/ri";
 import { TiSocialLinkedin } from "react-icons/ti";
-import me from "../../../assets/img/me.png";
-import resume from "../../../assets/ty-nasello-resume.pdf";
-import Button from "../../../components/Button";
 
 const Header = () => {
-  const contactButtons: {
+  const contacts: {
     href: string;
     icon: JSX.Element;
     text?: string;
@@ -27,7 +28,7 @@ const Header = () => {
       icon: <RiGithubLine />,
     },
     {
-      href: "mailto:tnasello@uwaterloo.ca",
+      href: "mailto:tynasello@gmail.com",
       icon: <MdOutlineMarkEmailUnread />,
     },
     {
@@ -39,7 +40,7 @@ const Header = () => {
 
   return (
     <SHeader>
-      <Content
+      <NameContainer
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
@@ -51,17 +52,17 @@ const Header = () => {
             <Text type="h1">👋</Text>
           </Hand>
         </Name>
-      </Content>
+      </NameContainer>
 
       <Contacts>
-        {contactButtons.map((button) => (
+        {contacts.map((button) => (
           <Link href={button.href} key={button.href}>
             <motion.div
               initial={{ y: 25, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.1 }}
             >
-              <Button type="contact">
+              <Button type="bubble">
                 {button.icon}
                 {button.text && (
                   <Text type="psmall" isBold isLight>
@@ -84,17 +85,17 @@ const SHeader = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  row-gap: 1.5rem;
 `;
-const Content = styled(motion.div)`
+
+const NameContainer = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
-  > * {
-    margin-bottom: 1.5rem;
-  }
+  gap: 1.5rem;
 `;
+
 const ProfileImg = styled.img`
   width: 80px;
-  margin-right: 1.5rem;
   border-radius: 15px;
 
   transition: all 0.7s;
@@ -102,14 +103,14 @@ const ProfileImg = styled.img`
     transform: rotate(8deg) scale(1.4);
   }
 `;
+
 const Name = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  > * {
-    margin-right: 1rem;
-  }
+  gap: 1.5rem;
 `;
+
 const Hand = styled.div`
   cursor: default;
 
@@ -146,9 +147,5 @@ const Hand = styled.div`
 const Contacts = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1.5rem;
-
-  > * {
-    margin: 0.3rem;
-  }
+  gap: 0.6rem;
 `;
