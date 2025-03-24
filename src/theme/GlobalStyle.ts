@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     /* Reset styles for all structural tags */
-    
     a,  body, button, canvas,  div, form,
     h1, h2, h3, h4, h5, h6, head, header,  
     hr, html, i, iframe, img, input,  
@@ -22,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
             background: rgba(113, 137, 255, .1);
         }
     }
+    
     /* Miscellaneous resets */
     body {
         line-height: 1.15;
@@ -33,7 +33,6 @@ const GlobalStyle = createGlobalStyle`
         color: white;
         all:unset;
     }
-    
     button,
     input,
     optgroup,
@@ -44,6 +43,7 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.15; 
         margin: 0; 
     }
+    
     /* Global Styling */
     html{
         scroll-behavior: smooth;
@@ -56,8 +56,6 @@ const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
-    
-    
 `;
 
 export default GlobalStyle;

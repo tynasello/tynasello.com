@@ -2,31 +2,39 @@ import { ReactNode } from "react";
 import styled from "styled-components";
 
 interface Props {
-  type: string;
+  type: "bubble" | "section" | "project" | "tag";
   onClick?: any;
-  active?: string;
-  section?: string;
+  activeSectionNumber?: number;
+  sectionNumber?: number;
   style?: {};
   children?: ReactNode;
 }
 
-const Button = ({ type, onClick, active, section, style, children }: Props) => {
-  return type === "contact" ? (
-    <SContactButton onClick={() => onClick && onClick()} style={{ ...style }}>
+const Button = ({
+  type,
+  onClick,
+  activeSectionNumber,
+  sectionNumber,
+  style,
+  children,
+}: Props) => {
+  return type === "bubble" ? (
+    <SBubbleButton onClick={onClick} style={{ ...style }}>
       {children}
-    </SContactButton>
-  ) : type === "main" ? (
-    <SMainButton
-      active={active}
-      section={section}
-      onClick={() => onClick && section && onClick(section)}
+    </SBubbleButton>
+  ) : type === "section" ? (
+    <SSectionButton
+      onClick={onClick}
+      active={activeSectionNumber}
+      section={sectionNumber}
+      style={{ ...style }}
     >
       {children}
-    </SMainButton>
+    </SSectionButton>
   ) : type === "project" ? (
-    <SProjectButton>{children}</SProjectButton>
-  ) : type === "skill" ? (
-    <SSkillButton>{children}</SSkillButton>
+    <SProjectButton style={{ ...style }}> {children} </SProjectButton>
+  ) : type === "tag" ? (
+    <SSkillButton style={{ ...style }}>{children}</SSkillButton>
   ) : (
     <></>
   );
@@ -35,8 +43,9 @@ const Button = ({ type, onClick, active, section, style, children }: Props) => {
 export default Button;
 
 const BaseButton = styled.button`
-  transition: all 0.3s ease;
   cursor: pointer;
+
+  transition: all 0.3s ease;
   border-radius: 10px;
 
   display: flex;
@@ -53,76 +62,68 @@ const BaseButton = styled.button`
   }
 `;
 
-const SContactButton = styled(BaseButton)`
+const SBubbleButton = styled(BaseButton)`
   padding: 0.7rem;
   font-size: 23px;
   border-radius: 15px;
-
-  span {
-    padding-left: 0.5rem;
-  }
+  gap: 0.5rem;
 `;
 
-const SProjectButton = styled(BaseButton)`
-  span {
-    padding: 0.34rem 0.6rem;
-  }
-`;
-
-const SSkillButton = styled(BaseButton)`
-  cursor: default;
-  span {
-    padding: 0.34rem 0.6rem;
-  }
-  /* background: ${({ theme }) => theme.colors.threea}; */
-`;
-
-const SMainButton = styled(BaseButton).attrs(
-  (props: { active: string; section: string }) => props
+const SSectionButton = styled(BaseButton).attrs(
+  (props: { active: number; section: number }) => props
 )`
   padding: 1rem 1.4rem;
   font-size: 23px;
 
   background: ${({ theme, active, section }) =>
     section === active
-      ? section === "Project"
+      ? section === 1
         ? theme.colors.onea
-        : section === "Work"
+        : section === 2
         ? theme.colors.twoa
-        : section === "Skill" && theme.colors.threea
+        : null
       : "inherit"};
   color: ${({ theme, active, section }) =>
     section === active
-      ? section === "Project"
+      ? section === 1
         ? theme.colors.one
-        : section === "Work"
+        : section === 2
         ? theme.colors.two
-        : section === "Skill" && theme.colors.three
+        : null
       : theme.colors.plight};
 
   span {
     padding-left: 0.8rem;
     color: ${({ theme, active, section }) =>
       section === active
-        ? section === "Project"
+        ? section === 1
           ? theme.colors.one
-          : section === "Work"
+          : section === 2
           ? theme.colors.two
-          : section === "Skill" && theme.colors.three
+          : null
         : theme.colors.plight};
   }
   &:hover {
     > * {
       color: ${({ theme, active, section }) =>
         section === active
-          ? section === "Project"
+          ? section === 1
             ? theme.colors.one
-            : section === "Work"
+            : section === 2
             ? theme.colors.two
-            : section === "Skill" && theme.colors.three
+            : null
           : theme.colors.p};
     }
     background: ${({ theme, active, section }) =>
       section !== active && theme.colors.lightbg};
   }
+`;
+
+const SProjectButton = styled(BaseButton)`
+  padding: 0.34rem 0.6rem;
+`;
+
+const SSkillButton = styled(BaseButton)`
+  cursor: default;
+  padding: 0.34rem 0.6rem;
 `;

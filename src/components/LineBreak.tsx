@@ -1,5 +1,5 @@
 const LineBreak = () => {
-  return <div style={{ padding: ".4rem 0" }}></div>;
+  return <div style={{ height: "1rem", width: "100%" }}></div>;
 };
 
 export default LineBreak;
