@@ -25,7 +25,7 @@ const Button = ({ type, onClick, active, section, style, children }: Props) => {
     </SMainButton>
   ) : type === "project" ? (
     <SProjectButton>{children}</SProjectButton>
-  ) : type === "skill" ? (
+  ) : type === "tag" ? (
     <SSkillButton>{children}</SSkillButton>
   ) : (
     <></>
@@ -70,11 +70,9 @@ const SProjectButton = styled(BaseButton)`
 `;
 
 const SSkillButton = styled(BaseButton)`
-  cursor: default;
   span {
     padding: 0.34rem 0.6rem;
   }
-  /* background: ${({ theme }) => theme.colors.threea}; */
 `;
 
 const SMainButton = styled(BaseButton).attrs(
@@ -85,41 +83,41 @@ const SMainButton = styled(BaseButton).attrs(
 
   background: ${({ theme, active, section }) =>
     section === active
-      ? section === "Project"
+      ? section === "One"
         ? theme.colors.onea
-        : section === "Work"
+        : section === "Two"
         ? theme.colors.twoa
-        : section === "Skill" && theme.colors.threea
+        : null
       : "inherit"};
   color: ${({ theme, active, section }) =>
     section === active
-      ? section === "Project"
+      ? section === "One"
         ? theme.colors.one
-        : section === "Work"
+        : section === "Two"
         ? theme.colors.two
-        : section === "Skill" && theme.colors.three
+        : null
       : theme.colors.plight};
 
   span {
     padding-left: 0.8rem;
     color: ${({ theme, active, section }) =>
       section === active
-        ? section === "Project"
+        ? section === "One"
           ? theme.colors.one
-          : section === "Work"
+          : section === "Two"
           ? theme.colors.two
-          : section === "Skill" && theme.colors.three
+          : null
         : theme.colors.plight};
   }
   &:hover {
     > * {
       color: ${({ theme, active, section }) =>
         section === active
-          ? section === "Project"
+          ? section === "One"
             ? theme.colors.one
-            : section === "Work"
+            : section === "Two"
             ? theme.colors.two
-            : section === "Skill" && theme.colors.three
+            : null
           : theme.colors.p};
     }
     background: ${({ theme, active, section }) =>

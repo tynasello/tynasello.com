@@ -1,16 +1,16 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Projects from "./Projects";
-import Skills from "./Skills";
+import Interests from "./Interests";
 
 import { motion } from "framer-motion";
-import { AiFillTool } from "react-icons/ai";
 import { FaFolder } from "react-icons/fa";
+import { BsPersonHearts } from "react-icons/bs";
 import Button from "../../../components/Button";
 import Text from "../../../components/Text";
 
 const Main = () => {
-  const [section, setSection] = useState("Project");
+  const [section, setSection] = useState("One");
 
   const onClick = (section: string) => {
     setSection(section);
@@ -23,21 +23,16 @@ const Main = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3, delay: 0.75 }}
       >
-        <Button
-          type="main"
-          onClick={onClick}
-          active={section}
-          section="Project"
-        >
+        <Button type="main" onClick={onClick} active={section} section="One">
           <FaFolder />
           <Text type="psmall" isBold>
             Projects
           </Text>
         </Button>
-        <Button type="main" onClick={onClick} active={section} section="Skill">
-          <AiFillTool />
+        <Button type="main" onClick={onClick} active={section} section="Two">
+          <BsPersonHearts />
           <Text type="psmall" isBold>
-            Skills
+            Interests
           </Text>
         </Button>
       </Buttons>
@@ -46,10 +41,10 @@ const Main = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3, delay: 1.1 }}
       >
-        {section === "Project" ? (
+        {section === "One" ? (
           <Projects />
-        ) : section === "Skill" ? (
-          <Skills />
+        ) : section === "Two" ? (
+          <Interests />
         ) : (
           <></>
         )}
@@ -72,5 +67,5 @@ const Buttons = styled(motion.div)`
   }
 `;
 const MainContent = styled(motion.div)`
-  margin: 3rem 0 0 1rem;
+  margin: 2rem 0 0 1rem;
 `;

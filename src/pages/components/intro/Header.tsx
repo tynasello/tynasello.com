@@ -27,7 +27,7 @@ const Header = () => {
       icon: <RiGithubLine />,
     },
     {
-      href: "mailto:tnasello@uwaterloo.ca",
+      href: "mailto:tynasello@gmail.com",
       icon: <MdOutlineMarkEmailUnread />,
     },
     {

@@ -20,7 +20,7 @@ function App() {
   const body = document.body;
   if (body !== null) {
     body.style.background =
-      theme === "light" ? "rgb(244, 246, 247)" : "rgb(22, 30, 41)";
+      theme === "light" ? "rgb(244, 246, 247)" : "rgb(26, 31, 36)";
   }
 
   return (

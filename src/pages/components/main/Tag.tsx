@@ -5,9 +5,9 @@ interface Props {
   name: string;
 }
 
-const SkillTag = ({ name }: Props) => {
+const Tag = ({ name }: Props) => {
   return (
-    <Button type="skill">
+    <Button type="tag">
       <Text type="psmall" isLight>
         {name}
       </Text>
@@ -15,4 +15,4 @@ const SkillTag = ({ name }: Props) => {
   );
 };
 
-export default SkillTag;
+export default Tag;

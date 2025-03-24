@@ -15,5 +15,5 @@ function Intro() {
 export default Intro;
 
 const SIntro = styled.div`
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 `;
